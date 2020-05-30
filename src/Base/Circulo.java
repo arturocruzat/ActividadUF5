@@ -30,7 +30,7 @@ public class Circulo {
     
     @Override
     public String toString() {
-        return String.format("%s%.2f\t\t%s%.2f", "Perimetro: ", perimetro(),
+        return String.format("%s%.4f\t\t%s%.4f", "Perimetro: ", perimetro(),
                 "Area: ", area());
     }
 }
