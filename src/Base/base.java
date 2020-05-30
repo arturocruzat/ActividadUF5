@@ -13,6 +13,7 @@ public class base {
         
         double radio;
         
+        //Generador de circulos aleatorios
         do {                
             radio = getRadio();
             Radios.add(radio);
@@ -20,7 +21,13 @@ public class base {
             Circulo c = new Circulo(radio);
             Circulos.add(c);
             
-        } while (radio >= 0.01);    //Generador de circulos aleatorios
+        } while (radio >= 0.01);
+        
+        //Imprimimos la lista de circulos
+        System.out.println("Circulos");
+        for (Circulo lista : Circulos) {
+            System.out.println(lista.toString());
+        }
            
     }
     
